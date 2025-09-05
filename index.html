@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بيع شدات ببجي موبايل - Omar</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;padding:0;background:#0f0f0f;color:white;text-align:center;}
+header{background:linear-gradient(90deg,#ffcc00,#ffaa00);color:black;padding:30px 20px;}
+header h1{margin:0;font-size:2em;}
+header p{margin:10px 0 0 0;font-size:1.1em;}
+nav{background:#1a1a1a;padding:15px 0;display:flex;justify-content:center;gap:20px;}
+nav a{color:#ffcc00;font-weight:bold;transition:0.3s;}
+nav a:hover{color:#ffaa00;}
+.container{padding:40px 20px;display:flex;flex-wrap:wrap;justify-content:center;gap:25px;}
+.card{background:#1c1c1c;border-radius:15px;padding:20px;width:250px;box-shadow:0 0 15px rgba(255,255,255,0.1);transition:transform 0.3s, box-shadow 0.3s;}
+.card:hover{transform:translateY(-5px);box-shadow:0 0 25px rgba(255,204,0,0.6);}
+.card img{width:100px;margin-bottom:15px;}
+.card h2{color:#ffcc00;margin:10px 0;}
+.card p{margin:5px 0;font-weight:bold;}
+.btn{display:inline-block;padding:10px 20px;background:#ffcc00;color:black;border-radius:8px;font-weight:bold;transition:0.3s;}
+.btn:hover{background:#ffaa00;}
+footer{background:#111;padding:20px;color:gray;}
+footer a{color:#ffcc00;}
+#topBtn{display:none;position:fixed;bottom:20px;right:20px;z-index:99;border:none;outline:none;background-color:#ffcc00;color:black;cursor:pointer;padding:12px 18px;border-radius:10px;font-weight:bold;transition:0.3s;}
+#topBtn:hover{background-color:#ffaa00;}
+@media(max-width:768px){.card{width:90%;}nav{flex-direction:column;gap:10px;}}
+</style>
+</head>
+<body>
+
+<header>
+<h1>🎮 بيع شدات ببجي موبايل 🎮</h1>
+<p>اشحن شداتك بسرعة وأمان!</p>
+</header>
+
+<nav>
+<a href="#products">الأسعار</a>
+<a href="#contact">تواصل معنا</a>
+</nav>
+
+<div class="container" id="products">
+  <!-- الباقات -->
+  <div class="card">
+    <img src="https://via.placeholder.com/100x100?text=30%2B1+UC" alt="30+1 UC">
+    <h2>30+1 شدة</h2>
+    <p>السعر: 30 جنيه</p>
+    <a href="https://wa.me/201279269784?text=عايز%2030%2B1%20شدة" class="btn" target="_blank">اشتري الآن</a>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/100x100?text=600%2B78+UC" alt="600+78 UC">
+    <h2>600+78 شدة</h2>
+    <p>السعر: 470 جنيه</p>
+    <a href="https://wa.me/201279269784?text=عايز%20600%2B78%20شدة" class="btn" target="_blank">اشتري الآن</a>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/100x100?text=1500%2B345+UC" alt="1500+345 UC">
+    <h2>1500+345 شدة</h2>
+    <p>السعر: 1070 جنيه</p>
+    <a href="https://wa.me/201279269784?text=عايز%201500%2B345%20شدة" class="btn" target="_blank">اشتري الآن</a>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/100x100?text=3000%2B940+UC" alt="3000+940 UC">
+    <h2>3000+940 شدة</h2>
+    <p>السعر: 2110 جنيه</p>
+    <a href="https://wa.me/201279269784?text=عايز%203000%2B940%20شدة" class="btn" target="_blank">اشتري الآن</a>
+  </div>
+
+  <!-- خانة الطلب الخاص -->
+  <div class="card">
+    <h2>طلب عدد شدات خاص</h2>
+    <p>لو عاوز عدد شدات خاص تواصل معانا في الواتس ⬇️</p>
+    <a href="https://wa.me/201279269784?text=عايز%20عدد%20شدات%20خاص" class="btn" target="_blank">تواصل الآن</a>
+  </div>
+</div>
+
+<footer id="contact">
+<p>تواصل معنا عبر واتساب: 
+<a href="https://wa.me/201279269784" target="_blank">اضغط هنا</a>
+</p>
+<p>حقوق النشر © 2025 | Omar</p>
+</footer>
+
+<button onclick="topFunction()" id="topBtn" title="ارجع للأعلى">⬆️</button>
+
+<script>
+let topBtn = document.getElementById("topBtn");
+window.onscroll = function(){scrollFunction();};
+function scrollFunction(){if(document.body.scrollTop>300 || document.documentElement.scrollTop>300){topBtn.style.display="block";}else{topBtn.style.display="none";}}
+function topFunction(){document.body.scrollTop=0;document.documentElement.scrollTop=0;}
+</script>
+
+</body>
+</html>
