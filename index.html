@@ -43,6 +43,7 @@ header img{
     color:#00ffcc;
 }
 
+/* الحاوية والكروت */
 .container{
     display:flex;
     flex-wrap:wrap;
@@ -60,16 +61,24 @@ header img{
     width:280px;
     transition:0.4s;
     border:1px solid #ffffff20;
-}
-
-.card:hover{
-    transform:translateY(-10px) scale(1.03);
-    box-shadow:0 20px 40px rgba(0,0,0,0.7);
+    box-shadow:0 0 10px rgba(255,255,255,0.2);
 }
 
 .card img{
     width:60px;
     margin-bottom:10px;
+    transition:0.4s;
+}
+
+/* تأثير glow عند hover */
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 0 30px #00ffcc, 0 0 60px #00ffcc, 0 0 90px #00ffcc;
+}
+
+.card:hover img{
+    transform:scale(1.2) rotate(5deg);
+    filter:drop-shadow(0 0 15px #00ffcc);
 }
 
 .card h2{
@@ -83,6 +92,7 @@ header img{
     color:#00ffcc;
 }
 
+/* زرار اشتري */
 button{
     padding:12px 22px;
     border:none;
