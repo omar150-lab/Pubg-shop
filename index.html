@@ -16,7 +16,7 @@ body{
     text-align:center;
 }
 
-/* الشريط المتحرك */
+/* شريط العرض */
 .top-bar{
     background:linear-gradient(90deg,red,orange);
     padding:10px;
@@ -73,7 +73,6 @@ header{
     color:#00ffcc;
 }
 
-/* زرار جذاب */
 button{
     padding:12px 22px;
     border:none;
@@ -114,6 +113,42 @@ button:hover{
     font-size:12px;
     border-radius:20px;
     font-weight:bold;
+}
+
+/* آراء العملاء */
+.reviews{
+    padding:60px 20px;
+}
+
+.review-box{
+    background:#ffffff10;
+    padding:20px;
+    border-radius:15px;
+    width:280px;
+}
+
+.reviews-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+/* الضمان */
+.guarantee{
+    padding:60px 20px;
+    background:#00000030;
+}
+
+.guarantee-box{
+    width:250px;
+}
+
+.guarantee-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
 }
 
 .special{
@@ -198,12 +233,51 @@ footer{
 </a>
 </div>
 
+<!-- آراء العملاء -->
+<section class="reviews">
+<h2>💬 آراء عملائنا</h2>
+<br>
+<div class="reviews-container">
+<div class="review-box">
+<p>🔥 سرعة في الشحن بجد، استلمت في أقل من 5 دقايق!</p>
+<strong>— أحمد ⭐⭐⭐⭐⭐</strong>
+</div>
+<div class="review-box">
+<p>تعامل محترم وسعر ممتاز جدًا.</p>
+<strong>— محمود ⭐⭐⭐⭐⭐</strong>
+</div>
+<div class="review-box">
+<p>موثوق 100% وهشتري تاني أكيد.</p>
+<strong>— يوسف ⭐⭐⭐⭐⭐</strong>
+</div>
+</div>
+</section>
+
+<!-- الضمان -->
+<section class="guarantee">
+<h2>🛡️ ضماننا ليك</h2>
+<br>
+<div class="guarantee-container">
+<div class="guarantee-box">
+<h3>⚡ شحن فوري</h3>
+<p>تنفيذ الطلب بسرعة بعد التواصل.</p>
+</div>
+<div class="guarantee-box">
+<h3>🔒 أمان كامل</h3>
+<p>لا نطلب كلمة السر نهائيًا.</p>
+</div>
+<div class="guarantee-box">
+<h3>💰 ضمان حل أي مشكلة</h3>
+<p>أي مشكلة يتم حلها فورًا.</p>
+</div>
+</div>
+</section>
+
 <footer>
 جميع الحقوق محفوظة © Omar
 </footer>
 
 <script>
-// عد تنازلي 24 ساعة
 let countDownDate = new Date().getTime() + (24 * 60 * 60 * 1000);
 
 let x = setInterval(function() {
