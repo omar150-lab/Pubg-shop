@@ -1,0 +1,47 @@
+<!-- آراء العملاء -->
+<section style="padding:60px 20px;">
+<h2 style="margin-bottom:30px;">💬 آراء عملائنا</h2>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+
+<div style="background:#ffffff10;padding:20px;border-radius:15px;width:280px;">
+<p>🔥 سرعة في الشحن بجد، استلمت في أقل من 5 دقايق!</p>
+<strong>— أحمد خالد ⭐⭐⭐⭐⭐</strong>
+</div>
+
+<div style="background:#ffffff10;padding:20px;border-radius:15px;width:280px;">
+<p>سعر ممتاز وتعامل محترم جدًا، هكرر الشراء تاني 👍</p>
+<strong>— محمود علي ⭐⭐⭐⭐⭐</strong>
+</div>
+
+<div style="background:#ffffff10;padding:20px;border-radius:15px;width:280px;">
+<p>أحسن مكان شحنت منه شدات، موثوق 100%</p>
+<strong>— يوسف محمد ⭐⭐⭐⭐⭐</strong>
+</div>
+
+</div>
+</section>
+
+<!-- قسم الضمان -->
+<section style="padding:60px 20px;background:#00000030;">
+<h2 style="margin-bottom:30px;">🛡️ ضماننا ليك</h2>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:30px;">
+
+<div style="width:250px;">
+<h3>⚡ شحن فوري</h3>
+<p>تنفيذ الطلب في أسرع وقت ممكن بعد التواصل.</p>
+</div>
+
+<div style="width:250px;">
+<h3>🔒 أمان كامل</h3>
+<p>لا نطلب كلمة السر — التعامل آمن 100%.</p>
+</div>
+
+<div style="width:250px;">
+<h3>💰 ضمان استرجاع</h3>
+<p>في حالة حدوث أي مشكلة يتم حلها فورًا أو استرجاع المبلغ.</p>
+</div>
+
+</div>
+</section>
