@@ -1,96 +1,227 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>بيع شدات ببجي موبايل - Omar</title>
+<title>شحن شدات ببجي - Omar</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
-body{font-family:Arial,sans-serif;margin:0;padding:0;background:#0f0f0f;color:white;text-align:center;}
-header{background:linear-gradient(90deg,#ffcc00,#ffaa00);color:black;padding:30px 20px;}
-header h1{margin:0;font-size:2em;}
-header p{margin:10px 0 0 0;font-size:1.1em;}
-nav{background:#1a1a1a;padding:15px 0;display:flex;justify-content:center;gap:20px;}
-nav a{color:#ffcc00;font-weight:bold;transition:0.3s;}
-nav a:hover{color:#ffaa00;}
-.container{padding:40px 20px;display:flex;flex-wrap:wrap;justify-content:center;gap:25px;}
-.card{background:#1c1c1c;border-radius:15px;padding:20px;width:250px;box-shadow:0 0 15px rgba(255,255,255,0.1);transition:transform 0.3s, box-shadow 0.3s;}
-.card:hover{transform:translateY(-5px);box-shadow:0 0 25px rgba(255,204,0,0.6);}
-.card img{width:100px;margin-bottom:15px;}
-.card h2{color:#ffcc00;margin:10px 0;}
-.card p{margin:5px 0;font-weight:bold;}
-.btn{display:inline-block;padding:10px 20px;background:#ffcc00;color:black;border-radius:8px;font-weight:bold;transition:0.3s;}
-.btn:hover{background:#ffaa00;}
-footer{background:#111;padding:20px;color:gray;}
-footer a{color:#ffcc00;}
-#topBtn{display:none;position:fixed;bottom:20px;right:20px;z-index:99;border:none;outline:none;background-color:#ffcc00;color:black;cursor:pointer;padding:12px 18px;border-radius:10px;font-weight:bold;transition:0.3s;}
-#topBtn:hover{background-color:#ffaa00;}
-@media(max-width:768px){.card{width:90%;}nav{flex-direction:column;gap:10px;}}
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:'Cairo', sans-serif;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    text-align:center;
+}
+
+/* الشريط المتحرك */
+.top-bar{
+    background:linear-gradient(90deg,red,orange);
+    padding:10px;
+    font-weight:bold;
+    animation:blink 1.5s infinite alternate;
+}
+@keyframes blink{
+    from{opacity:1;}
+    to{opacity:0.6;}
+}
+
+header{
+    padding:30px 20px;
+}
+
+.countdown{
+    font-size:20px;
+    margin-top:10px;
+    color:#00ffcc;
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:40px 20px;
+}
+
+.card{
+    position:relative;
+    background:#ffffff10;
+    backdrop-filter:blur(15px);
+    border-radius:18px;
+    padding:25px;
+    width:280px;
+    transition:0.4s;
+    border:1px solid #ffffff20;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 20px 40px rgba(0,0,0,0.7);
+}
+
+.card h2{
+    margin-bottom:10px;
+    font-size:22px;
+}
+
+.price{
+    font-size:24px;
+    margin:15px 0;
+    color:#00ffcc;
+}
+
+/* زرار جذاب */
+button{
+    padding:12px 22px;
+    border:none;
+    border-radius:10px;
+    background:#00ffcc;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    animation:pulse 1.5s infinite;
+    transition:0.3s;
+}
+
+button:hover{
+    background:white;
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.08);}
+    100%{transform:scale(1);}
+}
+
+/* عرض مميز */
+.best{
+    border:2px solid gold;
+    box-shadow:0 0 25px gold;
+}
+
+.best::before{
+    content:"⭐ العرض المميز";
+    position:absolute;
+    top:-12px;
+    left:50%;
+    transform:translateX(-50%);
+    background:gold;
+    color:black;
+    padding:6px 14px;
+    font-size:12px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+.special{
+    margin:60px 20px;
+    padding:30px;
+    background:#ffffff10;
+    border-radius:18px;
+}
+
+footer{
+    margin-top:40px;
+    padding:20px;
+    background:#00000040;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+    header h1{font-size:22px;}
+}
 </style>
 </head>
+
 <body>
 
-<header>
-<h1>🎮 بيع شدات ببجي موبايل 🎮</h1>
-<p>اشحن شداتك بسرعة وأمان!</p>
-</header>
-
-<nav>
-<a href="#products">الأسعار</a>
-<a href="#contact">تواصل معنا</a>
-</nav>
-
-<div class="container" id="products">
-  <!-- الباقات -->
-  <div class="card">
-    <img src="https://via.placeholder.com/100x100?text=30%2B1+UC" alt="30+1 UC">
-    <h2>30+1 شدة</h2>
-    <p>السعر: 30 جنيه</p>
-    <a href="https://wa.me/201279269784?text=عايز%2030%2B1%20شدة" class="btn" target="_blank">اشتري الآن</a>
-  </div>
-
-  <div class="card">
-    <img src="https://via.placeholder.com/100x100?text=600%2B78+UC" alt="600+78 UC">
-    <h2>600+78 شدة</h2>
-    <p>السعر: 470 جنيه</p>
-    <a href="https://wa.me/201279269784?text=عايز%20600%2B78%20شدة" class="btn" target="_blank">اشتري الآن</a>
-  </div>
-
-  <div class="card">
-    <img src="https://via.placeholder.com/100x100?text=1500%2B345+UC" alt="1500+345 UC">
-    <h2>1500+345 شدة</h2>
-    <p>السعر: 1070 جنيه</p>
-    <a href="https://wa.me/201279269784?text=عايز%201500%2B345%20شدة" class="btn" target="_blank">اشتري الآن</a>
-  </div>
-
-  <div class="card">
-    <img src="https://via.placeholder.com/100x100?text=3000%2B940+UC" alt="3000+940 UC">
-    <h2>3000+940 شدة</h2>
-    <p>السعر: 2110 جنيه</p>
-    <a href="https://wa.me/201279269784?text=عايز%203000%2B940%20شدة" class="btn" target="_blank">اشتري الآن</a>
-  </div>
-
-  <!-- خانة الطلب الخاص -->
-  <div class="card">
-    <h2>طلب عدد شدات خاص</h2>
-    <p>لو عاوز عدد شدات خاص تواصل معانا في الواتس ⬇️</p>
-    <a href="https://wa.me/201279269784?text=عايز%20عدد%20شدات%20خاص" class="btn" target="_blank">تواصل الآن</a>
-  </div>
+<div class="top-bar">
+🔥 عرض لفترة محدودة — الحق قبل ما الوقت يخلص 🔥
 </div>
 
-<footer id="contact">
-<p>تواصل معنا عبر واتساب: 
-<a href="https://wa.me/201279269784" target="_blank">اضغط هنا</a>
-</p>
-<p>حقوق النشر © 2025 | Omar</p>
+<header>
+<h1>شحن شدات ببجي بأفضل الأسعار</h1>
+<div class="countdown" id="timer"></div>
+</header>
+
+<div class="container">
+
+<div class="card best">
+<h2>60 شده</h2>
+<div class="price">60 جنيه</div>
+<a href="https://wa.me/201120278759" target="_blank">
+<button>اشتري الآن</button>
+</a>
+</div>
+
+<div class="card best">
+<h2>360 شده</h2>
+<div class="price">300 جنيه</div>
+<a href="https://wa.me/201120278759" target="_blank">
+<button>اشتري الآن</button>
+</a>
+</div>
+
+<div class="card">
+<h2>600 + 78 شده</h2>
+<div class="price">470 جنيه</div>
+<a href="https://wa.me/201120278759" target="_blank">
+<button>اشتري الآن</button>
+</a>
+</div>
+
+<div class="card">
+<h2>1500 + 345 شده</h2>
+<div class="price">1070 جنيه</div>
+<a href="https://wa.me/201120278759" target="_blank">
+<button>اشتري الآن</button>
+</a>
+</div>
+
+<div class="card">
+<h2>3000 + 940 شده</h2>
+<div class="price">2110 جنيه</div>
+<a href="https://wa.me/201120278759" target="_blank">
+<button>اشتري الآن</button>
+</a>
+</div>
+
+</div>
+
+<div class="special">
+<h3>لو عاوز عدد شدات خاص تواصل معانا في الواتس ⬇️</h3>
+<a href="https://wa.me/201120278759" target="_blank">
+<button>تواصل واتساب</button>
+</a>
+</div>
+
+<footer>
+جميع الحقوق محفوظة © Omar
 </footer>
 
-<button onclick="topFunction()" id="topBtn" title="ارجع للأعلى">⬆️</button>
-
 <script>
-let topBtn = document.getElementById("topBtn");
-window.onscroll = function(){scrollFunction();};
-function scrollFunction(){if(document.body.scrollTop>300 || document.documentElement.scrollTop>300){topBtn.style.display="block";}else{topBtn.style.display="none";}}
-function topFunction(){document.body.scrollTop=0;document.documentElement.scrollTop=0;}
+// عد تنازلي 24 ساعة
+let countDownDate = new Date().getTime() + (24 * 60 * 60 * 1000);
+
+let x = setInterval(function() {
+  let now = new Date().getTime();
+  let distance = countDownDate - now;
+
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("timer").innerHTML =
+  "ينتهي العرض خلال: " + hours + "س " + minutes + "د " + seconds + "ث ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer").innerHTML = "انتهى العرض!";
+  }
+}, 1000);
 </script>
 
 </body>
